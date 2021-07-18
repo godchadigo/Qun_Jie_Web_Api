@@ -16,7 +16,7 @@ from flask_jwt_extended import (
 
 import pymysql as PYM
 import json as Json
-import uuid as Uuid
+import uuid as Uuid  
 import jwt as JWT
 
 # 資料庫參數設定
