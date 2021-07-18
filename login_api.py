@@ -188,7 +188,7 @@ def create_device():
             if (any(result) == False):
                 create_cmd = f"INSERT INTO `device`(`Uuid`, `DeviceId`, `DeviceName`, `DevciceGroupId`, `CompanyId`) VALUES ('{uuid}','{device_id}','{device_name}','{device_group_id}','{company_id}')"
                 cursor.execute(create_cmd)
-                connect.commit()     
+                connect.commit()   
                 return jsonify([{'Result' : "創建成功!"}])
             else:
                 return jsonify([{'Result' : "設備已存在!"}])
